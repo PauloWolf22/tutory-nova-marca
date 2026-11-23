@@ -539,10 +539,166 @@ body.galeria .st.mod{opacity:1}
   </div>
 </section>
 
+<!-- ===================== ATO 5b · IDEIAS DE VÍDEO (THIAGO) =====================
+     Conteúdo em ideias/ideias-thiago.js. O que estiver vazio aparece como "a preencher". -->
+<style>
+.vazio{color:var(--pedra);font-style:italic;font-weight:400;opacity:.8}
+.grafite .vazio{color:#8D97AD}
+.slot{position:absolute;overflow:hidden;border-radius:8px;border:2px dashed rgba(107,115,133,.45);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center;color:var(--pedra);font:500 17px/1.35 var(--sans);background:rgba(0,64,200,.03)}
+.grafite .slot{border-color:rgba(141,151,173,.4);background:rgba(122,162,255,.04);color:#8D97AD}
+.slot .play{width:64px;height:64px;border-radius:50%;border:2px solid currentColor;display:flex;align-items:center;justify-content:center;font-size:22px;opacity:.7}
+.slot.cheio{border:0;background:#111}
+.slot.cheio img,.slot.cheio video{width:100%;height:100%;object-fit:cover;display:block}
+.slot .ir{position:absolute;right:14px;bottom:14px;z-index:2;display:inline-flex;gap:8px;align-items:center;padding:10px 16px;border-radius:999px;background:var(--papel);color:var(--grafite);font:600 14px/1 var(--sans);text-decoration:none;box-shadow:0 8px 20px -8px rgba(0,0,0,.5)}
+.campo{border-top:1.5px solid rgba(107,115,133,.3);padding-top:12px}
+.grafite .campo{border-top-color:rgba(141,151,173,.25)}
+.campo .r{font:700 13px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--pedra);margin-bottom:9px}
+.grafite .campo .r{color:#8D97AD}
+.campo .v{font:500 21px/1.4 var(--sans)}
+.refc{position:absolute;width:536px}
+.refc h4{font:400 30px/1.1 var(--serif);margin-top:18px}
+.refc p{font:500 16px/1.45 var(--sans);margin-top:8px;color:var(--carvao)}
+.refc p b{font-weight:700;color:var(--tinta)}
+.topo-n{font:italic 400 72px/1 var(--serif);color:var(--tinta)}
+.grafite .topo-n{color:var(--tinta-clara)}
+.rot li{display:grid;grid-template-columns:44px 1fr;align-items:baseline;padding:11px 0;border-bottom:1px dashed rgba(107,115,133,.35);font:500 20px/1.35 var(--sans)}
+.rot li span{font:italic 400 28px/1 var(--serif);color:var(--tinta)}
+.grafite .rot li span{color:var(--tinta-clara)}
+.estado{display:flex;gap:10px}
+.estado i{font-style:normal;padding:9px 16px;border-radius:999px;border:1.5px solid rgba(107,115,133,.45);font:600 13px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--pedra)}
+.estado i.on{background:var(--tinta);border-color:var(--tinta);color:#fff}
+.grafite .estado i.on{background:var(--tinta-clara);border-color:var(--tinta-clara);color:var(--grafite)}
+.tb{position:absolute;left:96px;right:96px;top:300px}
+.tb .lh,.tb .ln{display:grid;grid-template-columns:70px 1fr 220px 300px;gap:24px;align-items:center}
+.tb .lh{font:700 13px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:#8D97AD;padding-bottom:14px;border-bottom:1.5px solid rgba(141,151,173,.35)}
+.tb .ln{padding:15px 0;border-bottom:1px dashed rgba(141,151,173,.25);font:500 21px/1.3 var(--sans)}
+.tb .ln .n{font:italic 400 30px/1 var(--serif);color:var(--tinta-clara)}
+.tb .pri{display:flex;gap:8px}
+.tb .pri i{font-style:normal;padding:7px 13px;border-radius:999px;border:1.5px solid rgba(141,151,173,.4);font:600 12px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:#8D97AD}
+.tb .pri i.on{background:var(--tinta-clara);border-color:var(--tinta-clara);color:var(--grafite)}
+</style>
+
+<section class="st" id="ideias" data-t="Ideias de vídeo · Thiago" data-x="24000" data-y="6900" data-z="-400" data-ry="10">
+  <div class="pg grafite sombra">
+    <div class="folio"><img src="assets/06_BRANCO_03.png" alt=""><span>14 · Ideias de vídeo</span></div>
+    <div class="ft rv" style="--d:2;left:1080px;top:0;width:840px;height:1080px;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 18%);mask-image:linear-gradient(90deg,transparent 0,#000 18%)"><img src="assets/fotos/thiago.jpg" style="object-position:62% 30%" alt=""></div>
+    <div class="abs rv" style="--d:4;left:1330px;bottom:96px"><span class="nm"><i></i>Thiago <span>· Video maker · Time Tutory</span></span></div>
+    <div class="abs" style="left:96px;top:250px;width:900px">
+      <div class="kick rv">Nova área · <b>Ideias de vídeo</b></div>
+      <h2 class="d rv" style="--d:1;font-size:150px;margin-top:26px">Ideias que<br>viram <em>vídeo.</em></h2>
+      <p class="t rv" style="--d:2;margin-top:36px;max-width:780px;opacity:.88">Espaço do Thiago, nosso video maker, para apresentar ideias de vídeo dentro do novo posicionamento: as referências, o roteiro em tópicos e o que precisa para gravar.</p>
+      <div class="rv" style="--d:3;display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:56px;max-width:860px">
+        <div class="campo"><div class="r">01</div><div class="v">Referências</div></div>
+        <div class="campo"><div class="r">02</div><div class="v">Fichas de ideia</div></div>
+        <div class="campo"><div class="r">03</div><div class="v">Banco de tópicos</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="st" id="ideias-ref" data-t="Ideias de vídeo · Referências" data-x="26700" data-y="6900" data-z="-400">
+  <div class="pg papel sombra">
+    <div class="folio"><img src="assets/01_PRETA.png" alt=""><span>14 · Ideias de vídeo · Referências</span></div>
+    <div class="abs" style="left:96px;top:130px;right:96px;display:flex;justify-content:space-between;align-items:flex-end">
+      <div><div class="kick rv">01 · Referências</div><h2 class="d rv" style="--d:1;font-size:84px;margin-top:16px">O que inspira <em>a ideia.</em></h2></div>
+      <p class="pequeno rv" style="--d:2;max-width:430px;text-align:right">Vídeos, prints e links que mostram o ritmo, a luz e o jeito de contar que a gente quer.</p>
+    </div>
+    <div id="ideias-refs" class="rv" style="--d:3"></div>
+  </div>
+</section>
+
+<section class="st" id="ideia1" data-t="Ideia de vídeo 01" data-x="29400" data-y="6900" data-z="-400" data-ry="-10">
+  <div class="pg papel sombra ideia-pg" data-i="0"></div>
+</section>
+<section class="st" id="ideia2" data-t="Ideia de vídeo 02" data-x="24000" data-y="9100" data-z="-400" data-ry="10">
+  <div class="pg grafite sombra ideia-pg" data-i="1"></div>
+</section>
+<section class="st" id="ideia3" data-t="Ideia de vídeo 03" data-x="26700" data-y="9100" data-z="-400">
+  <div class="pg papel sombra ideia-pg" data-i="2"></div>
+</section>
+
+<section class="st" id="ideias-topicos" data-t="Ideias de vídeo · Banco de tópicos" data-x="29400" data-y="9100" data-z="-400" data-ry="-10">
+  <div class="pg grafite sombra">
+    <div class="folio"><img src="assets/06_BRANCO_03.png" alt=""><span>14 · Ideias de vídeo · Banco de tópicos</span></div>
+    <div class="abs" style="left:96px;top:130px;right:96px;display:flex;justify-content:space-between;align-items:flex-end">
+      <div><div class="kick rv">03 · Banco de tópicos</div><h2 class="d rv" style="--d:1;font-size:84px;margin-top:16px">Ideias soltas, <em>para não perder.</em></h2></div>
+      <p class="pequeno rv" style="--d:2;max-width:420px;text-align:right">Uma linha por ideia. As de prioridade alta viram ficha na próxima rodada.</p>
+    </div>
+    <div class="tb rv" style="--d:3" id="ideias-tb"></div>
+  </div>
+</section>
+
+<script src="ideias/ideias-thiago.js"></script>
+<script>
+(function(){
+  var D = window.IDEIAS_THIAGO || {referencias:[],ideias:[],topicos:[]};
+  function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  function ou(v,ph){return v ? esc(v) : '<span class="vazio">'+ph+'</span>';}
+  function midia(m,link,estilo,ph){
+    var ir = link ? '<a class="ir" href="'+esc(link)+'" target="_blank" rel="noopener" onclick="event.stopPropagation()">Abrir referência ↗</a>' : '';
+    if (m && /\.(mp4|webm|mov)$/i.test(m)) return '<div class="slot cheio" style="'+estilo+'"><video data-src="'+esc(m)+'" muted loop playsinline></video>'+ir+'</div>';
+    if (m) return '<div class="slot cheio" style="'+estilo+'"><img src="'+esc(m)+'" alt="">'+ir+'</div>';
+    return '<div class="slot" style="'+estilo+'"><div class="play">▶</div><div>'+ph+'</div>'+ir+'</div>';
+  }
+  // 01 · painel de referências (3 x 2)
+  var refs = document.getElementById('ideias-refs'), h = '';
+  for (var i=0;i<6;i++){
+    var r = (D.referencias||[])[i] || {}, x = 96+(i%3)*(536+60), y = 330+Math.floor(i/3)*360, n = ('0'+(i+1)).slice(-2);
+    h += '<div class="refc" style="left:'+x+'px;top:'+y+'px">'+midia(r.midia,r.link,'position:relative;width:536px;height:200px','Referência '+n+'<br><small>vídeo, print ou link</small>')+
+         '<h4>'+ou(r.titulo,'Título da referência')+'</h4>'+
+         '<p><b>Fonte:</b> '+ou(r.fonte,'perfil, marca ou canal')+'</p>'+
+         '<p><b>O que levar:</b> '+ou(r.levar,'o ritmo, a luz, o enquadramento, a narrativa…')+'</p></div>';
+  }
+  refs.innerHTML = h;
+  // 02 · fichas de ideia
+  var pgs = document.querySelectorAll('.ideia-pg');
+  for (var k=0;k<pgs.length;k++){
+    var pg = pgs[k], j = +pg.getAttribute('data-i'), it = (D.ideias||[])[j] || {}, n2 = ('0'+(j+1)).slice(-2);
+    var esc_ = pg.classList.contains('grafite'), logo = esc_ ? 'assets/06_BRANCO_03.png' : 'assets/01_PRETA.png';
+    var vert = it.formato === '9:16' || it.formato === '4:5';
+    var ref = it.referencia || {};
+    var est = vert ? 'left:96px;top:150px;width:470px;height:'+(it.formato==='4:5'?588:836)+'px' : 'left:96px;top:250px;width:760px;height:428px';
+    var xd = vert ? 640 : 930;
+    var tops = (it.topicos && it.topicos.length ? it.topicos : ['','','','','']), li = '';
+    for (var t=0;t<tops.length;t++) li += '<li><span>'+(t+1)+'</span><div>'+ou(tops[t],'tópico do roteiro')+'</div></li>';
+    var st = it.status || 'ideia';
+    pg.innerHTML =
+      '<div class="folio"><img src="'+logo+'" alt=""><span>14 · Ideias de vídeo · Ficha '+n2+'</span></div>'+
+      '<div class="rv" style="--d:1">'+midia(ref.midia,ref.link,est,'Referência da ideia<br><small>'+(vert?'vertical':'16:9')+' · vídeo, print ou link</small>')+'</div>'+
+      (vert ? '' : '<div class="abs rv" style="--d:2;left:96px;top:720px;width:760px"><div class="campo"><div class="r">Objetivo</div><div class="v">'+ou(it.objetivo,'o que esse vídeo precisa fazer (atrair, explicar, convencer, apresentar alguém…)')+'</div></div></div>')+
+      '<div class="abs" style="left:'+xd+'px;top:150px;right:96px">'+
+        '<div class="rv" style="display:flex;align-items:center;gap:22px"><span class="topo-n">'+n2+'</span><div class="kick">Ideia de vídeo · Thiago</div></div>'+
+        '<h2 class="d rv" style="--d:1;font-size:72px;margin-top:14px">'+ou(it.titulo,'Título da ideia')+'</h2>'+
+        (vert ? '<div class="campo rv" style="--d:2;margin-top:24px"><div class="r">Objetivo</div><div class="v">'+ou(it.objetivo,'o que esse vídeo precisa fazer')+'</div></div>' : '')+
+        '<div class="rv" style="--d:2;display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:26px">'+
+          '<div class="campo"><div class="r">Formato</div><div class="v">'+ou(it.formato,'16:9 · 9:16 · 4:5')+'</div></div>'+
+          '<div class="campo"><div class="r">Duração</div><div class="v">'+ou(it.duracao,'15 · 30 · 60 s')+'</div></div>'+
+          '<div class="campo"><div class="r">Onde publica</div><div class="v">'+ou(it.canal,'Reels, YouTube, anúncio…')+'</div></div>'+
+        '</div>'+
+        '<div class="rv" style="--d:3;margin-top:26px"><div class="campo" style="padding-top:12px"><div class="r">Roteiro em tópicos</div></div><ol class="rot" style="list-style:none">'+li+'</ol></div>'+
+        '<div class="rv" style="--d:4;display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:24px">'+
+          '<div class="campo"><div class="r">Quem aparece</div><div class="v" style="font-size:18px">'+ou(it.quem,'pessoas do time (liberadas)')+'</div></div>'+
+          '<div class="campo"><div class="r">Trilha e clima</div><div class="v" style="font-size:18px">'+ou(it.trilha,'ritmo e sensação')+'</div></div>'+
+          '<div class="campo"><div class="r">Para gravar</div><div class="v" style="font-size:18px">'+ou(it.precisa,'local, equipamento, dia')+'</div></div>'+
+        '</div>'+
+        '<div class="estado rv" style="--d:5;margin-top:26px"><i class="'+(st==='ideia'?'on':'')+'">Ideia</i><i class="'+(st==='roteiro'?'on':'')+'">Em roteiro</i><i class="'+(st==='aprovada'?'on':'')+'">Aprovada</i></div>'+
+      '</div>';
+  }
+  // 03 · banco de tópicos
+  var tb = '<div class="lh"><div>Nº</div><div>Tópico / ideia</div><div>Formato</div><div>Prioridade</div></div>', T = D.topicos || [];
+  for (var q=0;q<Math.max(10,T.length);q++){
+    var o = T[q] || {}, p = o.prioridade || '';
+    tb += '<div class="ln"><span class="n">'+(q+1)+'</span><div>'+ou(o.texto,'ideia a preencher')+'</div><div>'+ou(o.formato,'—')+'</div>'+
+          '<div class="pri"><i class="'+(p==='alta'?'on':'')+'">Alta</i><i class="'+(p==='média'||p==='media'?'on':'')+'">Média</i><i class="'+(p==='baixa'?'on':'')+'">Baixa</i></div></div>';
+  }
+  document.getElementById('ideias-tb').innerHTML = tb;
+})();
+</script>
+
 <!-- ===================== ATO 6 · IMPLANTAÇÃO ===================== -->
 <section class="st" id="implantar" data-t="Como implantar" data-x="29900" data-y="4300" data-z="-900" data-ry="-16">
   <div class="pg papel sombra">
-    <div class="folio"><img src="assets/01_PRETA.png" alt=""><span>14 · Como implantar</span></div>
+    <div class="folio"><img src="assets/01_PRETA.png" alt=""><span>15 · Como implantar</span></div>
     <div class="abs" style="left:0;right:0;top:130px;text-align:center">
       <div class="kick rv">Próximos passos</div>
       <h2 class="d rv" style="--d:1;font-size:92px;margin-top:18px">Validar, testar, <em>virar a chave.</em></h2>
